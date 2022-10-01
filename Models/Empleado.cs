@@ -15,7 +15,7 @@ namespace SoftwareII.Models
             [Required]
             public int Area { get; set; }
             [Required]
-            public int Code { get; set; }
+            public string Code { get; set; }
             [Required]
             [Phone]
             public string Phone { get; set; }

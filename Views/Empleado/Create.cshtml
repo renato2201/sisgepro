@@ -29,7 +29,7 @@
                 <div class="form-group row my-3">
                     <div class="col-4">
                         <label asp-for="Area" class="control-label"></label>
-                        <select asp-for="Area" class="form-select">
+                        <select asp-for="Area" class="form-select">q
                             <option value="" disabled selected>Selecciona area</option>
                             <option value="0">Area 1</option>
                             <option value="1">Area 2</option>
@@ -57,14 +57,14 @@
                     </select>
                     <span asp-validation-for="Rol" class="text-danger"></span>
                 </div>
-                <div class="form-group my-5">
+                <div class="form-group mt-5">
                     <input type="submit" value="Create" class="btn btn-primary me-5" />
                     <button type="button" class="btn btn-primary ms-3">Limpiar</button>
                 </div>
         </form>
     </div>
 
-<div>
+<div class="mt-5">
     <a asp-action="Index">Back to List</a>
 </div>
 

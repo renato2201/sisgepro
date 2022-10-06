@@ -10,9 +10,11 @@ namespace SoftwareII.Models
             [Required]
             public string LastName { get; set; }
             [Required]
-            public string Company { get; set; }
+            public string Company { get; set; }     
+            [RegularExpression(@"^\d{9}$", ErrorMessage ="Only numbers accepted")]
             [Required]
-            public int Code { get; set; }
+            [StringLength(9)]
+            public string Code { get; set; }
             [Required]
             [EmailAddress]
             public string Email { get; set; }

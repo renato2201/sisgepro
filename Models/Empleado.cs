@@ -13,14 +13,18 @@ namespace SoftwareII.Models
             [EmailAddress]
             public string Email { get; set; }
             [Required]
-            public int Area { get; set; }
+            public string Area { get; set; }
+            [RegularExpression(@"^\d{9}$", ErrorMessage ="Only numbers accepted")]
             [Required]
+            [StringLength(9)]
             public string Code { get; set; }
+            [RegularExpression(@"^\d{9}$", ErrorMessage ="Only numbers accepted")]
             [Required]
+            [StringLength(9)]
             [Phone]
             public string Phone { get; set; }
             [Required]
-            public int Rol { get; set; }
+            public string Rol { get; set; }
     }
 }
 

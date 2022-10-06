@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SoftwareII.Data;
 
@@ -10,9 +11,10 @@ using SoftwareII.Data;
 namespace SoftwareII.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221006222213_cambioCode")]
+    partial class cambioCode
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -221,14 +223,12 @@ namespace SoftwareII.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Area")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                    b.Property<int>("Area")
+                        .HasColumnType("int");
 
                     b.Property<string>("Code")
                         .IsRequired()
-                        .HasMaxLength(9)
-                        .HasColumnType("varchar(9)");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -244,12 +244,10 @@ namespace SoftwareII.Migrations
 
                     b.Property<string>("Phone")
                         .IsRequired()
-                        .HasMaxLength(9)
-                        .HasColumnType("varchar(9)");
-
-                    b.Property<string>("Rol")
-                        .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int>("Rol")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

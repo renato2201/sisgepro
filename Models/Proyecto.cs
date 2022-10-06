@@ -16,7 +16,7 @@ namespace SoftwareII.Models
             [Required]
             public int AreaQA { get; set; }
             [Required]
-            public int Code { get; set; }
+            public string Code { get; set; }
             [Required]
             public int Status { get; set; }
             [Required]

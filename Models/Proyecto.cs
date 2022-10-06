@@ -20,12 +20,17 @@ namespace SoftwareII.Models
             [Required]
             public int Status { get; set; }
             [Required]
+            [DataType(DataType.Date)]
             public DateTime FechaInicio { get; set; }
             [Required]
+            [DataType(DataType.Date)]
             public DateTime FechaFin { get; set; }
             [Required]
             public int Rol { get; set; }
+            
         }
+        
+
 }
 
 

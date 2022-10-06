@@ -6,28 +6,27 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <a class="btn btn-primary btn-sm" href="Stakeholder/Create" role="button">Crear stakeholder</a>
+</div>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                Código
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LastName)
+                Nombre
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Company)
+                Apellidos
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Code)
+                Correo electrónico
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Email)
+                Empresa
             </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>

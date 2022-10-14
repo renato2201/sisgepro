@@ -3,8 +3,8 @@
 @{
     ViewData["Title"] = "Create";
 }
-
-<h1>Crear nuevo empleado</h1>
+<main class="app-content">
+      <h1>Crear nuevo empleado</h1>
 <hr />
 
     <div>
@@ -67,6 +67,9 @@
 <div class="mt-5">
     <a asp-action="Index">Back to List</a>
 </div>
+
+    </main>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
